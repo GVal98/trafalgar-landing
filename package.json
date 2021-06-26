@@ -1,0 +1,40 @@
+{
+  "name": "trafalgar",
+  "version": "1.0.0",
+  "description": "Trafalgar landing",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack serve --config webpack.dev.js",
+    "build": "webpack --config webpack.prod.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GVal98/trafalgar_landing.git"
+  },
+  "keywords": [
+    "landing"
+  ],
+  "author": "Valeriy Garifullin <GVal98@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GVal98/trafalgar_landing/issues"
+  },
+  "homepage": "https://github.com/GVal98/trafalgar_landing#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.2.6",
+    "copy-webpack-plugin": "^9.0.1",
+    "css-loader": "^5.2.6",
+    "cssnano": "^5.0.6",
+    "html-loader": "^2.1.2",
+    "html-webpack-plugin": "^5.3.2",
+    "mini-css-extract-plugin": "^1.6.1",
+    "node-sass": "^6.0.1",
+    "postcss-loader": "^6.1.0",
+    "sass-loader": "^12.1.0",
+    "style-loader": "^3.0.0",
+    "webpack": "^5.40.0",
+    "webpack-cli": "^4.7.2",
+    "webpack-dev-server": "^3.11.2",
+    "webpack-merge": "^5.8.0"
+  }
+}
