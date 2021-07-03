@@ -5,11 +5,12 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
+  position: relative;
 
   &__bg {
     position: absolute;
     z-index: -100;
-    left: -15rem;
+    left: -45rem;
   }
 
   &__text {
