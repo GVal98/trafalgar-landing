@@ -1,7 +1,12 @@
-@import "./abstracts/variables";
+@import './abstracts/variables';
 
-@import "./base/base";
-@import "./base/typography";
+@import './base/base';
+@import './base/typography';
 
-@import "./layout/header";
-@import "./layout/intro";
+@import './components/subheading';
+@import './components/simple-card';
+@import './components/button';
+
+@import './layout/header';
+@import './layout/intro';
+@import './layout/services';
