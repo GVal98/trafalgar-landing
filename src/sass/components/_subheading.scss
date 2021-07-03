@@ -17,4 +17,8 @@
     background-color: $primary-color-1;
     border-radius: 0.5rem;
   }
+
+  &--left {
+    align-items: flex-start;
+  }
 }

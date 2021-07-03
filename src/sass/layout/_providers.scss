@@ -1,0 +1,19 @@
+.providers {
+  display: flex;
+  width: 122rem;
+  margin-top: 22.9rem;
+
+  &__img {
+    margin-left: -5.5rem;
+  }
+
+  &__content {
+    width: 40rem;
+    margin-top: 5.7rem;
+    margin-left: 13.7rem;
+  }
+
+  &__button {
+    margin-top: 4rem;
+  }
+}
