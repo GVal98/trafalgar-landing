@@ -1,3 +1,11 @@
 body {
-  font-family: "Mulish", sans-serif;
+  font-family: 'Mulish', sans-serif;
+}
+
+.primary-text {
+  font-size: 1.8rem;
+  font-weight: 300;
+  line-height: 3rem;
+  color: $primary-color-2;
+  margin-top: 3.2rem;
 }

@@ -1,0 +1,19 @@
+.button {
+  height: 5.6rem;
+  width: 20rem;
+  background-color: transparent;
+  color: $accent-color-1;
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-decoration: none;
+  border: 0.2rem solid $accent-color-1;
+  border-radius: 5.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: letter-spacing 0.2s;
+
+  &:hover {
+    letter-spacing: 0.1rem;
+  }
+}
