@@ -1,0 +1,24 @@
+.apps {
+  display: flex;
+  justify-content: space-between;
+  width: 122rem;
+  margin-top: 22.9rem;
+
+  &__subheading {
+    width: 25.4rem;
+  }
+
+  &__img {
+    margin-right: -3rem;
+  }
+
+  &__content {
+    width: 38rem;
+    margin-left: 9rem;
+    margin-top: 3.6rem;
+  }
+
+  &__button {
+    margin-top: 4rem;
+  }
+}
