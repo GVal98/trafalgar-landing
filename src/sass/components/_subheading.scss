@@ -21,4 +21,12 @@
   &--left {
     align-items: flex-start;
   }
+
+  &--light {
+    color: $primary-color-3;
+
+    .subheading__line {
+      background-color: $primary-color-3;
+    }
+  }
 }
