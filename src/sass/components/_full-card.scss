@@ -1,0 +1,41 @@
+.full-card {
+  width: 35rem;
+  box-shadow: 1rem 4rem 5rem rgba(229, 233, 246, 0.4);
+  border-radius: 2rem;
+  overflow: hidden;
+  background-color: $primary-color-3;
+
+  &__heading {
+    font-size: 2.1rem;
+    line-height: 3.2rem;
+    width: 25.9rem;
+    margin-left: 3.3rem;
+    margin-top: 2.1rem;
+  }
+
+  &__text {
+    font-size: 1.6rem;
+    line-height: 2.8rem;
+    color: $primary-color-2;
+    width: 26.1rem;
+    margin-left: 3.3rem;
+    margin-top: 1.2rem;
+  }
+
+  &__link {
+    font-size: 1.7rem;
+    font-weight: 600;
+    line-height: 2.8rem;
+    color: $accent-color-1;
+    margin-left: 3.3rem;
+    display: inline-block;
+    margin-top: 2.5rem;
+    margin-bottom: 3.5rem;
+    text-decoration: none;
+    width: auto;
+
+    &:hover {
+      color: $accent-color-1-light;
+    }
+  }
+}
