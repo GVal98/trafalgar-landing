@@ -7,6 +7,13 @@
   text-align: center;
   position: relative;
 
+  &__dot-bg {
+    position: absolute;
+    z-index: -100;
+    left: 104rem;
+    top: 54.5rem;
+  }
+
   &__bg {
     position: absolute;
     z-index: -100;

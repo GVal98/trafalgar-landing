@@ -2,6 +2,13 @@
   display: flex;
   width: 121.7rem;
   margin-top: 8.4rem;
+  position: relative;
+
+  &__dot-bg {
+    position: absolute;
+    z-index: -100;
+    left: -23rem;
+  }
 
   &__content {
     display: flex;
