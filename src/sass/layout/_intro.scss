@@ -35,18 +35,11 @@
   }
 
   &__button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 20rem;
-    height: 5.6rem;
+    @extend %base-button;
+
     margin-top: 4.5rem;
-    font-size: 1.8rem;
-    font-weight: 700;
     color: $primary-color-3;
-    text-decoration: none;
     background-color: $accent-color-1;
-    border-radius: 5.5rem;
 
     &:hover {
       background-color: #67c3f3;
