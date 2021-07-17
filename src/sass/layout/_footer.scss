@@ -1,10 +1,10 @@
 .footer {
   position: relative;
-  overflow: hidden;
-  width: 100vw;
-  margin-top: 20.6rem;
   display: flex;
   justify-content: center;
+  width: 100vw;
+  margin-top: 20.6rem;
+  overflow: hidden;
   color: $primary-color-3;
   background-image: linear-gradient(
     183.41deg,
@@ -14,35 +14,35 @@
 
   &__dot-bg {
     position: absolute;
-    z-index: 100;
-    left: 12rem;
     bottom: -1.8rem;
+    left: 12rem;
+    z-index: 100;
     mix-blend-mode: color-dodge;
   }
 
   &__content {
-    margin-left: -5rem;
-    width: 117rem;
     display: flex;
     justify-content: space-between;
+    width: 117rem;
     margin-top: 12rem;
     margin-bottom: 12rem;
+    margin-left: -5rem;
   }
 
   &__description {
+    width: 38rem;
     margin-top: 1.7rem;
     font-size: 1.8rem;
-    line-height: 2.8rem;
     font-weight: 300;
-    width: 38rem;
+    line-height: 2.8rem;
   }
 
   &__copyright {
+    width: 38rem;
     margin-top: 3.1rem;
     font-size: 1.6rem;
-    line-height: 2.8rem;
     font-weight: 300;
-    width: 38rem;
+    line-height: 2.8rem;
   }
 
   &__nav {
@@ -50,18 +50,18 @@
   }
 
   &__heading {
-    font-weight: bold;
-    font-size: 2rem;
-    line-height: 4.5rem;
     margin-bottom: 0.8rem;
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 4.5rem;
   }
 
   &__link {
+    font-size: 1.8rem;
+    font-weight: 300;
+    line-height: 3.8rem;
     color: $primary-color-3;
     text-decoration: none;
-    font-weight: 300;
-    font-size: 1.8rem;
-    line-height: 3.8rem;
 
     &:hover {
       color: darken($primary-color-3, 5%);

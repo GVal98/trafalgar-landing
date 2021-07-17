@@ -1,14 +1,14 @@
 .providers {
+  position: relative;
   display: flex;
   width: 122rem;
   margin-top: 22.9rem;
-  position: relative;
 
   &__dot-bg {
     position: absolute;
-    z-index: -100;
-    left: 132rem;
     top: 47rem;
+    left: 132rem;
+    z-index: -100;
   }
 
   &__img {

@@ -1,9 +1,9 @@
 .header {
   display: flex;
-  width: 121.7rem;
-  justify-content: space-between;
-  margin-top: 5.6rem;
   align-items: center;
+  justify-content: space-between;
+  width: 121.7rem;
+  margin-top: 5.6rem;
 
   &__menu {
     display: flex;
@@ -16,17 +16,17 @@
   }
 
   &__link {
+    font-size: 1.8rem;
     color: $primary-color-2;
     text-decoration: none;
-    font-size: 1.8rem;
 
     &:hover {
       color: $primary-color-1;
     }
 
     &_active {
-      color: $primary-color-1;
       font-weight: 700;
+      color: $primary-color-1;
     }
   }
 }
