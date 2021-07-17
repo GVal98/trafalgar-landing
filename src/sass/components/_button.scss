@@ -1,16 +1,9 @@
 .button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 20rem;
-  height: 5.6rem;
-  font-size: 1.8rem;
-  font-weight: 700;
+  @extend %base-button;
+
   color: $accent-color-1;
-  text-decoration: none;
   background-color: transparent;
   border: 0.2rem solid $accent-color-1;
-  border-radius: 5.5rem;
   transition: letter-spacing 0.2s;
 
   &:hover {
