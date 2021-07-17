@@ -35,7 +35,13 @@
     text-decoration: none;
 
     &:hover {
-      color: $accent-color-1-light;
+      opacity: 0.85;
     }
+  }
+
+  &__forward-arrow {
+    width: auto;
+    height: 0.9rem;
+    margin-left: 0.8rem;
   }
 }
