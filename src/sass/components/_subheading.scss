@@ -4,17 +4,17 @@
   align-items: center;
 
   &__text {
+    margin-bottom: 2.6rem;
     font-size: 3.6rem;
     font-weight: 700;
     line-height: 5.6rem;
-    margin-bottom: 2.6rem;
   }
 
   &__line {
     width: 5.6rem;
     height: 0.2rem;
-    border: none;
     background-color: $primary-color-1;
+    border: none;
     border-radius: 0.5rem;
   }
 

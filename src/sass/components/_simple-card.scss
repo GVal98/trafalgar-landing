@@ -2,20 +2,20 @@
   display: flex;
   flex-flow: column;
   align-items: flex-start;
-  text-align: left;
   width: 35rem;
   height: 35.4rem;
-  box-shadow: 1rem 4rem 5rem rgba(229, 233, 246, 0.4);
-  border-radius: 2rem;
   padding-left: 3.7rem;
   margin-bottom: 3.7rem;
+  text-align: left;
   background-color: $primary-color-3;
+  border-radius: 2rem;
+  box-shadow: 1rem 4rem 5rem rgba(229, 233, 246, 0.4);
 
   &__icon-box {
-    margin-top: 1rem;
-    height: 15.6rem;
     display: flex;
     align-items: center;
+    height: 15.6rem;
+    margin-top: 1rem;
   }
 
   &__icon {

@@ -1,13 +1,13 @@
 .intro {
+  position: relative;
   display: flex;
   width: 121.7rem;
   margin-top: 8.4rem;
-  position: relative;
 
   &__dot-bg {
     position: absolute;
-    z-index: -100;
     left: -23rem;
+    z-index: -100;
   }
 
   &__content {
@@ -19,34 +19,34 @@
   }
 
   &__heading {
+    margin: 0;
     font-size: 4.8rem;
     font-weight: 700;
     line-height: 5.6rem;
     color: $primary-color-1;
-    margin: 0;
   }
 
   &__text {
+    margin-top: 2.5rem;
     font-size: 2.1rem;
     font-weight: 300;
     line-height: 3.2rem;
     color: $primary-color-2;
-    margin-top: 2.5rem;
   }
 
   &__button {
-    height: 5.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 20rem;
+    height: 5.6rem;
     margin-top: 4.5rem;
-    background-color: $accent-color-1;
-    color: $primary-color-3;
     font-size: 1.8rem;
     font-weight: 700;
+    color: $primary-color-3;
     text-decoration: none;
+    background-color: $accent-color-1;
     border-radius: 5.5rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 
     &:hover {
       background-color: #67c3f3;
@@ -54,8 +54,8 @@
   }
 
   &__img {
-    height: 59.8rem;
     width: 69.3rem;
+    height: 59.8rem;
     margin-right: -2.9rem;
   }
 }
