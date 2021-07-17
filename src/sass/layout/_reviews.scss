@@ -4,6 +4,22 @@
   flex-direction: column;
   align-items: center;
   margin-top: 26.6rem;
+  position: relative;
+
+  &__outer-dot-bg {
+    position: absolute;
+    z-index: -100;
+    left: -5rem;
+    top: 28rem;
+  }
+
+  &__inner-dot-bg {
+    position: absolute;
+    z-index: 100;
+    right: -4.4rem;
+    top: -1rem;
+    mix-blend-mode: color-dodge;
+  }
 
   &__box {
     width: 100%;
@@ -17,6 +33,8 @@
       #5a98f2 76.74%
     );
     border-radius: 2.4rem;
+    position: relative;
+    overflow: hidden;
   }
 
   &__content {
