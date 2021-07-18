@@ -2,6 +2,7 @@ const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const CopyPlugin = require('copy-webpack-plugin')
 const StylelintPlugin = require('stylelint-webpack-plugin')
+const ESLintPlugin = require('eslint-webpack-plugin')
 
 module.exports = {
   entry: './src/index.js',
@@ -17,6 +18,7 @@ module.exports = {
       patterns: [{ from: './src/static/', to: './', noErrorOnMissing: true }],
     }),
     new StylelintPlugin({ files: './src/sass/' }),
+    new ESLintPlugin(),
   ],
   module: {
     rules: [
