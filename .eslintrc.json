@@ -16,6 +16,7 @@
         "devDependencies": true
       }
     ],
-    "global-require": "off"
+    "global-require": "off",
+    "linebreak-style": "off"
   }
 }
