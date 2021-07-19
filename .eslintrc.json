@@ -17,6 +17,9 @@
       }
     ],
     "global-require": "off",
-    "linebreak-style": "off"
+    "linebreak-style": "off",
+    "prefer-destructuring": "off",
+    "no-plusplus": "off",
+    "no-restricted-syntax": ["off", "ForOfStatement"]
   }
 }
