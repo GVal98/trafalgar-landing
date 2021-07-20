@@ -2,7 +2,7 @@
   position: relative;
   display: flex;
   justify-content: center;
-  width: 100vw;
+  width: 100%;
   margin-top: 20.6rem;
   overflow: hidden;
   color: $primary-color-3;
@@ -16,7 +16,8 @@
   &__content {
     display: flex;
     justify-content: space-between;
-    width: 117rem;
+    width: 100%;
+    max-width: 117rem;
     margin-top: 12rem;
     margin-bottom: 12rem;
     margin-left: -5rem;

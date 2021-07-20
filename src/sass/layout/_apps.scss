@@ -1,7 +1,8 @@
 .apps {
   display: flex;
   justify-content: space-between;
-  width: 122rem;
+  width: 100%;
+  max-width: 122rem;
   margin-top: 22.9rem;
 
   &__subheading {

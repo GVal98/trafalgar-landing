@@ -1,7 +1,8 @@
 .intro {
   position: relative;
   display: flex;
-  width: 121.7rem;
+  width: 100%;
+  max-width: 121.7rem;
   margin-top: 8.4rem;
 
   &__content {

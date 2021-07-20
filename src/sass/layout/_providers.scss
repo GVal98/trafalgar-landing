@@ -1,7 +1,8 @@
 .providers {
   position: relative;
   display: flex;
-  width: 122rem;
+  width: 100%;
+  max-width: 122rem;
   margin-top: 22.9rem;
 
   &__img {
