@@ -6,21 +6,6 @@
   width: 112rem;
   margin-top: 26.6rem;
 
-  &__outer-dot-bg {
-    position: absolute;
-    top: 28rem;
-    left: -5rem;
-    z-index: -100;
-  }
-
-  &__inner-dot-bg {
-    position: absolute;
-    top: -1rem;
-    right: -4.4rem;
-    z-index: 100;
-    mix-blend-mode: color-dodge;
-  }
-
   &__window {
     width: 100%;
     overflow: hidden;

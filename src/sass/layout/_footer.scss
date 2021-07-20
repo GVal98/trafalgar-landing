@@ -13,14 +13,6 @@
       #5a98f2 82.96%
     );
 
-  &__dot-bg {
-    position: absolute;
-    bottom: -1.8rem;
-    left: 12rem;
-    z-index: 100;
-    mix-blend-mode: color-dodge;
-  }
-
   &__content {
     display: flex;
     justify-content: space-between;
