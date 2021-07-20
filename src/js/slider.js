@@ -1,10 +1,20 @@
 export default class Slider {
-  constructor(sliderClass, itemClass, backButtonClass, forwardButtonClass, selectorClass) {
+  constructor(sliderClass,
+    containerClass,
+    itemClass,
+    backButtonClass,
+    forwardButtonClass,
+    selectorClass,
+    buttonActiveClass,
+    selectorActiveClass) {
     this.sliderClass = sliderClass;
+    this.containerClass = containerClass;
     this.itemClass = itemClass;
     this.backButtonClass = backButtonClass;
     this.forwardButtonClass = forwardButtonClass;
     this.selectorClass = selectorClass;
+    this.buttonActiveClass = buttonActiveClass;
+    this.selectorActiveClass = selectorActiveClass;
   }
 
   init() {
@@ -12,10 +22,12 @@ export default class Slider {
     this.addEventListeners();
     this.currentItem = 1;
     this.lastItem = this.selectors.length;
+    this.itemWidth = this.items[0].getBoundingClientRect().width;
   }
 
   getElements() {
     this.slider = document.getElementsByClassName(this.sliderClass)[0];
+    this.container = this.slider.getElementsByClassName(this.containerClass)[0];
     this.items = this.slider.getElementsByClassName(this.itemClass);
     this.backButton = this.slider.getElementsByClassName(this.backButtonClass)[0];
     this.forwardButton = this.slider.getElementsByClassName(this.forwardButtonClass)[0];
@@ -36,25 +48,25 @@ export default class Slider {
 
   handleBackButton() {
     if (this.currentItem === 1) {
-      this.backButton.classList.remove('reviews__arrow--active');
+      this.backButton.classList.remove(this.buttonActiveClass);
       return;
     }
-    this.backButton.classList.add('reviews__arrow--active');
+    this.backButton.classList.add(this.buttonActiveClass);
   }
 
   handleForwardButton() {
     if (this.currentItem === this.lastItem) {
-      this.forwardButton.classList.remove('reviews__arrow--active');
+      this.forwardButton.classList.remove(this.buttonActiveClass);
       return;
     }
-    this.forwardButton.classList.add('reviews__arrow--active');
+    this.forwardButton.classList.add(this.buttonActiveClass);
   }
 
   handleSelectors() {
     for (const selector of this.selectors) {
-      selector.classList.remove('reviews__selector--active');
+      selector.classList.remove(this.selectorActiveClass);
     }
-    this.selectors[this.currentItem - 1].classList.add('reviews__selector--active');
+    this.selectors[this.currentItem - 1].classList.add(this.selectorActiveClass);
   }
 
   moveBack() {
@@ -75,9 +87,8 @@ export default class Slider {
   }
 
   move() {
-    const width = this.items[0].getBoundingClientRect().width;
-    const offset = -(this.currentItem - 1) * width;
-    this.items[0].style.marginLeft = `${offset}px`;
+    const offset = -(this.currentItem - 1) * this.itemWidth;
+    this.container.style.transform = `translateX(${offset}px)`;
     this.handleNavigation();
   }
 }
