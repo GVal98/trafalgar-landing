@@ -2,6 +2,8 @@ export default class Menu {
   constructor(buttonClass, menuClass) {
     this.buttonClass = buttonClass;
     this.menuClass = menuClass;
+    this.visibleClass = `${menuClass}--visible`;
+    this.hiddenClass = `${menuClass}--hidden`;
   }
 
   init() {
@@ -15,24 +17,7 @@ export default class Menu {
   }
 
   toggle() {
-    if (this.isVisible()) {
-      this.hide();
-      return;
-    }
-    this.show();
-  }
-
-  show() {
-    this.menu.style.transform = 'translateX(0)';
-    this.menu.style.opacity = '1';
-  }
-
-  hide() {
-    this.menu.style.transform = 'translateX(100%)';
-    this.menu.style.opacity = '0';
-  }
-
-  isVisible() {
-    return this.menu.getBoundingClientRect().x === 0;
+    this.menu.classList.toggle(this.visibleClass);
+    this.menu.classList.toggle(this.hiddenClass);
   }
 }
