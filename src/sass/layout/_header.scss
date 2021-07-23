@@ -11,6 +11,10 @@
     padding-left: 2rem;
   }
 
+  @include media-sm {
+    margin-top: 3rem;
+  }
+
   &__menu {
     display: flex;
     align-items: center;
