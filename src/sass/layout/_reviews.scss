@@ -15,7 +15,7 @@
   &__container {
     position: relative;
     display: flex;
-    transition: all 1s;
+    transition: transform 1s;
   }
 
   &__box {
