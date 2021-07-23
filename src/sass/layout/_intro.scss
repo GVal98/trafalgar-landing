@@ -1,16 +1,39 @@
 .intro {
   position: relative;
   display: flex;
+  align-items: center;
   width: 100%;
   max-width: 121.7rem;
   margin-top: 8.4rem;
 
+  @include media-md {
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
+
+  @include media-sm {
+    flex-direction: column;
+    margin-top: 4rem;
+    text-align: center;
+  }
+
   &__content {
     display: flex;
     flex-direction: column;
-    width: 44.3rem;
+    flex-shrink: 0;
+    max-width: 44.3rem;
     margin-top: 10.6rem;
     margin-right: 10.9rem;
+
+    @include media-md {
+      margin-right: 3rem;
+    }
+
+    @include media-sm {
+      align-items: center;
+      margin-top: 0;
+      margin-right: 0;
+    }
   }
 
   &__heading {
@@ -39,11 +62,35 @@
     &:hover {
       background-color: #67c3f3;
     }
+
+    &--desktop {
+      @include media-sm {
+        display: none;
+      }
+    }
+
+    &--mobile {
+      display: none;
+
+      @include media-sm {
+        display: flex;
+        margin-top: 4.5rem;
+      }
+    }
   }
 
   &__img {
-    width: 69.3rem;
-    height: 59.8rem;
+    width: 100%;
+    height: auto;
     margin-right: -2.9rem;
+
+    @include media-md {
+      margin-right: 0;
+    }
+
+    @include media-sm {
+      width: 70%;
+      margin-top: 2.5rem;
+    }
   }
 }
