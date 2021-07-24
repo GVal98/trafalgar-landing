@@ -11,6 +11,17 @@
   border-radius: 2rem;
   box-shadow: 1rem 4rem 5rem rgba(229, 233, 246, 0.4);
 
+  @include media-md {
+    align-items: center;
+    width: 48%;
+    padding-left: 0;
+    text-align: center;
+  }
+
+  @include media-sm {
+    width: 100%;
+  }
+
   &__icon-box {
     display: flex;
     align-items: center;

@@ -8,8 +8,13 @@
   margin-top: 18.3rem;
   text-align: center;
 
+  @include media-md {
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
+
   &__text {
-    width: 95.2rem;
+    max-width: 95.2rem;
   }
 
   &__cards {
