@@ -1,26 +1,67 @@
 .apps {
   display: flex;
+  align-items: center;
   justify-content: space-between;
   width: 100%;
   max-width: 122rem;
   margin-top: 22.9rem;
+
+  @include media-md {
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
+
+  @include media-sm {
+    flex-direction: column;
+    text-align: center;
+  }
 
   &__subheading {
     width: 25.4rem;
   }
 
   &__img {
+    width: 100%;
+    height: auto;
     margin-right: -3rem;
+
+    @include media-md {
+      margin-right: 0;
+    }
+
+    @include media-sm {
+      width: 70%;
+      margin-top: 2.5rem;
+    }
   }
 
   &__content {
+    flex-shrink: 0;
     width: 38rem;
     margin-top: 3.6rem;
     margin-left: 9rem;
+
+    @include media-md {
+      margin-left: 0;
+    }
   }
 
   &__button {
     margin-top: 4rem;
+
+    &--desktop {
+      @include media-sm {
+        display: none;
+      }
+    }
+
+    &--mobile {
+      display: none;
+
+      @include media-sm {
+        display: flex;
+      }
+    }
   }
 
   &__down-arrow {
