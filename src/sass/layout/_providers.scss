@@ -1,21 +1,69 @@
 .providers {
   position: relative;
   display: flex;
+  align-items: center;
   width: 100%;
   max-width: 122rem;
   margin-top: 22.9rem;
 
+  @include media-md {
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
+
+  @include media-sm {
+    flex-direction: column;
+    text-align: center;
+  }
+
   &__img {
+    width: 100%;
+    height: auto;
     margin-left: -5.5rem;
+
+    @include media-md {
+      margin-left: 0;
+    }
+
+    @include media-sm {
+      width: 70%;
+      margin-top: 2.5rem;
+    }
   }
 
   &__content {
+    flex-shrink: 0;
     width: 40rem;
     margin-top: 5.7rem;
     margin-left: 13.7rem;
+
+    @include media-md {
+      margin-left: 4rem;
+    }
+
+    @include media-sm {
+      justify-content: center;
+      order: -1;
+      margin-left: 0;
+    }
   }
 
   &__button {
     margin-top: 4rem;
+
+    &--desktop {
+      @include media-sm {
+        display: none;
+      }
+    }
+
+    &--mobile {
+      display: none;
+
+      @include media-sm {
+        display: flex;
+        margin-top: 4.5rem;
+      }
+    }
   }
 }

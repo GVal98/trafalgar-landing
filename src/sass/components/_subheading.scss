@@ -20,6 +20,10 @@
 
   &--left {
     align-items: flex-start;
+
+    @include media-sm {
+      align-items: center;
+    }
   }
 
   &--light {
