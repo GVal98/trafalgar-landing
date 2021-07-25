@@ -2,7 +2,7 @@
   position: relative;
   display: flex;
   justify-content: center;
-  width: 100vw;
+  width: 100%;
   margin-top: 20.6rem;
   overflow: hidden;
   color: $primary-color-3;
@@ -16,10 +16,31 @@
   &__content {
     display: flex;
     justify-content: space-between;
-    width: 117rem;
+    width: 100%;
+    max-width: 117rem;
     margin-top: 12rem;
     margin-bottom: 12rem;
     margin-left: -5rem;
+
+    @include media-md {
+      padding-right: 2rem;
+      padding-left: 2rem;
+      margin-left: 0;
+    }
+
+    @include media-sm {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  }
+
+  &__info {
+    @include media-sm {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
   }
 
   &__description {
@@ -28,6 +49,10 @@
     font-size: 1.8rem;
     font-weight: 300;
     line-height: 2.8rem;
+
+    @include media-md {
+      width: 34rem;
+    }
   }
 
   &__copyright {
@@ -47,6 +72,10 @@
     font-size: 2rem;
     font-weight: bold;
     line-height: 4.5rem;
+
+    @include media-sm {
+      margin-top: 4rem;
+    }
   }
 
   &__link {

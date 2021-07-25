@@ -19,7 +19,7 @@
         <div class="logo__name">Trafalgar</div>
       </a>
       <nav class="header__nav">
-        <ul class="header__menu">
+        <ul class="header__menu header__menu--hidden">
           <li class="header__item">
             <a href="#" class="header__link header__link_active">Home</a>
           </li>
@@ -37,6 +37,9 @@
           </li>
         </ul>
       </nav>
+      <button class="header__menu-button">
+        <img src="img/menu.svg" alt="menu" class="header__menu-icon" />
+      </button>
     </header>
     <main class="main">
       <section class="intro">
@@ -46,9 +49,16 @@
             Trafalgar provides progressive, and affordable healthcare,
             accessible on mobile and online for everyone
           </p>
-          <a href="#" class="intro__button">Consult today</a>
+          <a href="#" class="intro__button intro__button--desktop"
+            >Consult today</a
+          >
         </div>
-        <img src="img/intro__img.jpg" alt="" class="intro__img" />
+        <div class="intro__img-wrapper">
+          <img src="img/intro__img.jpg" alt="" class="intro__img" />
+        </div>
+        <a href="#" class="intro__button intro__button--mobile"
+          >Consult today</a
+        >
       </section>
       <section class="services">
         <div class="subheading">
@@ -125,7 +135,9 @@
         <a href="#" class="button">Learn more</a>
       </section>
       <section class="providers">
-        <img src="img/providers__img.png" alt="" class="providers__img" />
+        <div class="providers__img-wrapper">
+          <img src="img/providers__img.png" alt="" class="providers__img" />
+        </div>
         <div class="providers__content">
           <div class="subheading subheading--left">
             <h2 class="subheading__text">Leading healthcare providers</h2>
@@ -136,8 +148,15 @@
             accessible on mobile and online for everyone. To us, it’s not just
             work. We take pride in the solutions we deliver
           </p>
-          <a href="#" class="providers__button button">Learn more</a>
+          <a
+            href="#"
+            class="providers__button providers__button--desktop button"
+            >Learn more</a
+          >
         </div>
+        <a href="#" class="providers__button providers__button--mobile button"
+          >Learn more</a
+        >
       </section>
       <section class="apps">
         <div class="apps__content">
@@ -152,12 +171,18 @@
             access information instantaneously (no tedeous form, long calls, or
             administrative hassle) and securely
           </p>
-          <a href="#" class="apps__button button"
+          <a href="#" class="apps__button apps__button--desktop button"
             >Download
             <img src="img/down-arrow.svg" alt="" class="apps__down-arrow"
           /></a>
         </div>
-        <img src="img/apps__img.png" alt="" class="apps__img" />
+        <div class="services__img-wrapper">
+          <img src="img/apps__img.png" alt="" class="apps__img" />
+        </div>
+        <a href="#" class="apps__button apps__button--mobile button"
+          >Download
+          <img src="img/down-arrow.svg" alt="" class="apps__down-arrow"
+        /></a>
       </section>
       <section class="reviews">
         <div class="reviews__window">
@@ -168,14 +193,16 @@
                 <hr class="subheading__line" />
               </div>
               <div class="reviews__content">
-                <img
-                  src="img/reviews__img-1.png"
-                  alt="Person photo"
-                  class="reviews__photo"
-                />
-                <div class="reviews__person">
-                  <div class="reviews__name">Edward Newgate</div>
-                  <div class="reviews__description">Founder Circle</div>
+                <div class="reviews__person-box">
+                  <img
+                    src="img/reviews__img-1.png"
+                    alt="Person photo"
+                    class="reviews__photo"
+                  />
+                  <div class="reviews__person">
+                    <div class="reviews__name">Edward Newgate</div>
+                    <div class="reviews__description">Founder Circle</div>
+                  </div>
                 </div>
                 <p class="reviews__text primary-text">
                   “Our dedicated patient engagement app and web portal allow you
@@ -190,14 +217,16 @@
                 <hr class="subheading__line" />
               </div>
               <div class="reviews__content">
-                <img
-                  src="img/reviews__img-2.png"
-                  alt="Person photo"
-                  class="reviews__photo"
-                />
-                <div class="reviews__person">
-                  <div class="reviews__name">John Smith</div>
-                  <div class="reviews__description">Founder Circle</div>
+                <div class="reviews__person-box">
+                  <img
+                    src="img/reviews__img-2.png"
+                    alt="Person photo"
+                    class="reviews__photo"
+                  />
+                  <div class="reviews__person">
+                    <div class="reviews__name">John Smith</div>
+                    <div class="reviews__description">Founder Circle</div>
+                  </div>
                 </div>
                 <p class="reviews__text primary-text">
                   “Our dedicated patient engagement app and web portal allow you
@@ -212,14 +241,16 @@
                 <hr class="subheading__line" />
               </div>
               <div class="reviews__content">
-                <img
-                  src="img/reviews__img-3.png"
-                  alt="Person photo"
-                  class="reviews__photo"
-                />
-                <div class="reviews__person">
-                  <div class="reviews__name">Barack Obama</div>
-                  <div class="reviews__description">Founder Circle</div>
+                <div class="reviews__person-box">
+                  <img
+                    src="img/reviews__img-3.png"
+                    alt="Person photo"
+                    class="reviews__photo"
+                  />
+                  <div class="reviews__person">
+                    <div class="reviews__name">Barack Obama</div>
+                    <div class="reviews__description">Founder Circle</div>
+                  </div>
                 </div>
                 <p class="reviews__text primary-text">
                   “Our dedicated patient engagement app and web portal allow you
@@ -234,14 +265,16 @@
                 <hr class="subheading__line" />
               </div>
               <div class="reviews__content">
-                <img
-                  src="img/reviews__img-4.png"
-                  alt="Person photo"
-                  class="reviews__photo"
-                />
-                <div class="reviews__person">
-                  <div class="reviews__name">Donald Trump</div>
-                  <div class="reviews__description">Founder Circle</div>
+                <div class="reviews__person-box">
+                  <img
+                    src="img/reviews__img-4.png"
+                    alt="Person photo"
+                    class="reviews__photo"
+                  />
+                  <div class="reviews__person">
+                    <div class="reviews__name">Donald Trump</div>
+                    <div class="reviews__description">Founder Circle</div>
+                  </div>
                 </div>
                 <p class="reviews__text primary-text">
                   “Our dedicated patient engagement app and web portal allow you

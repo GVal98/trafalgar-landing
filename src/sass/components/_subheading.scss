@@ -20,6 +20,10 @@
 
   &--left {
     align-items: flex-start;
+
+    @include media-sm {
+      align-items: center;
+    }
   }
 
   &--light {
@@ -27,6 +31,12 @@
 
     .subheading__line {
       background-color: $primary-color-3;
+    }
+
+    .subheading__text {
+      @include media-sm {
+        line-height: 5rem;
+      }
     }
   }
 }
