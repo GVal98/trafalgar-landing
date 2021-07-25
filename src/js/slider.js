@@ -22,7 +22,11 @@ export default class Slider {
     this.addEventListeners();
     this.currentItem = 1;
     this.lastItem = this.selectors.length;
-    this.itemWidth = this.items[0].getBoundingClientRect().width;
+    this.itemWidth = this.container.getBoundingClientRect().width;
+    this.resizeObserver = new ResizeObserver(
+      (entries) => this.resize(entries[0].contentRect.width),
+    );
+    this.resizeObserver.observe(this.container);
   }
 
   getElements() {
@@ -90,5 +94,10 @@ export default class Slider {
     const offset = -(this.currentItem - 1) * this.itemWidth;
     this.container.style.transform = `translateX(${offset}px)`;
     this.handleNavigation();
+  }
+
+  resize(width) {
+    this.itemWidth = width;
+    this.move();
   }
 }
