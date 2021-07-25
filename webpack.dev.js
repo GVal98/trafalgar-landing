@@ -20,6 +20,8 @@ module.exports = merge(baseConfig, {
   devtool: 'source-map',
   devServer: {
     open: true,
+    host: '0.0.0.0',
+    useLocalIp: true,
   },
   target: 'web',
 });
