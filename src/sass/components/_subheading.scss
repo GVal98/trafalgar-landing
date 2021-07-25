@@ -32,5 +32,11 @@
     .subheading__line {
       background-color: $primary-color-3;
     }
+
+    .subheading__text {
+      @include media-sm {
+        line-height: 5rem;
+      }
+    }
   }
 }
