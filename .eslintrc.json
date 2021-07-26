@@ -20,6 +20,8 @@
     "linebreak-style": "off",
     "prefer-destructuring": "off",
     "no-plusplus": "off",
-    "no-restricted-syntax": ["off", "ForOfStatement"]
+    "no-restricted-syntax": ["off", "ForOfStatement"],
+    "class-methods-use-this": "warn",
+    "no-unused-vars": "warn"
   }
 }
