@@ -42,6 +42,25 @@ export default class Slider {
     this.backButton.addEventListener('click', () => this.moveBack());
     this.forwardButton.addEventListener('click', () => this.moveForvard());
     [...this.selectors].forEach((selector, itemNumber) => selector.addEventListener('click', () => this.moveTo(itemNumber + 1)));
+    this.container.addEventListener('pointerdown', (e) => this.handlePointerDown(e));
+    this.container.addEventListener('pointerup', (e) => this.handlePointerUp(e));
+  }
+
+  handlePointerDown(e) {
+    this.pointerDownX = e.x;
+    this.pointerDownY = e.y;
+  }
+
+  handlePointerUp(e) {
+    const offsetX = e.x - this.pointerDownX;
+    const offsetY = e.y - this.pointerDownY;
+    if (Math.abs(offsetY) > Math.abs(offsetX)) return;
+    if (Math.abs(offsetX) < 10) return;
+    if (offsetX > 0) {
+      this.moveBack();
+      return;
+    }
+    this.moveForvard();
   }
 
   handleNavigation() {

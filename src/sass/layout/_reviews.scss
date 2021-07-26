@@ -21,6 +21,7 @@
   &__container {
     position: relative;
     display: flex;
+    touch-action: pan-y;
     transition: transform 1s;
   }
 
