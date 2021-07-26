@@ -1,20 +1,31 @@
 .intro {
-  position: relative;
   display: flex;
+  flex-direction: column;
   align-items: center;
   width: 100%;
-  max-width: 121.7rem;
-  margin-top: 8.4rem;
+  background: url('/src/img/dot-bg-1.svg') no-repeat -4.5rem 8.4rem;
 
   @include media-md {
-    padding-right: 2rem;
-    padding-left: 2rem;
+    background-image: none;
   }
 
-  @include media-sm {
-    flex-direction: column;
-    margin-top: 4rem;
-    text-align: center;
+  &__section {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 121.7rem;
+    margin-top: 8.4rem;
+
+    @include media-md {
+      padding-right: 2rem;
+      padding-left: 2rem;
+    }
+
+    @include media-sm {
+      flex-direction: column;
+      margin-top: 4rem;
+      text-align: center;
+    }
   }
 
   &__content {

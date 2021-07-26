@@ -1,15 +1,28 @@
 .reviews {
-  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
-  max-width: 112rem;
-  margin-top: 26.6rem;
+  max-width: 122rem;
+  background: url('/src/img/dot-bg-1.svg') no-repeat bottom 10rem left;
 
-  @include media-md {
-    padding-right: 2rem;
-    padding-left: 2rem;
+  @include media-sm {
+    background-position: bottom 10rem left 0.5rem;
+  }
+
+  &__section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 112rem;
+    margin-top: 26.6rem;
+
+    @include media-md {
+      padding-right: 2rem;
+      padding-left: 2rem;
+    }
   }
 
   &__window {
@@ -35,16 +48,24 @@
     padding-bottom: 8rem;
     overflow: hidden;
     background:
+      url('/src/img/dot-bg-1.svg') no-repeat top -1.4rem right -5rem,
       linear-gradient(
         208.18deg,
         $accent-color-1-light 9.05%,
         #5a98f2 76.74%
       );
+    background-blend-mode: color-dodge;
     border-radius: 2.4rem;
 
     @include media-sm {
       padding: 3rem 2rem;
       text-align: center;
+      background:
+        linear-gradient(
+          208.18deg,
+          $accent-color-1-light 9.05%,
+          #5a98f2 76.74%
+        );
     }
   }
 

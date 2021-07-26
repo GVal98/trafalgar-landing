@@ -1,19 +1,31 @@
 .apps {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-between;
   width: 100%;
-  max-width: 122rem;
-  margin-top: 22.9rem;
-
-  @include media-md {
-    padding-right: 2rem;
-    padding-left: 2rem;
-  }
+  background: url('/src/img/dot-bg-1.svg') no-repeat top right -4.4rem;
 
   @include media-sm {
-    flex-direction: column;
-    text-align: center;
+    background: url('/src/img/dot-bg-1.svg') no-repeat top 8rem right -4.4rem;
+  }
+
+  &__section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 122rem;
+    margin-top: 22.9rem;
+
+    @include media-md {
+      padding-right: 2rem;
+      padding-left: 2rem;
+    }
+
+    @include media-sm {
+      flex-direction: column;
+      text-align: center;
+    }
   }
 
   &__subheading {
