@@ -3,15 +3,16 @@
   display: flex;
   justify-content: center;
   width: 100%;
-  margin-top: 20.6rem;
   overflow: hidden;
   color: $primary-color-3;
-  background-image:
+  background:
     linear-gradient(
       183.41deg,
       $accent-color-1-light -8.57%,
       #5a98f2 82.96%
-    );
+    ),
+    url('/src/img/dot-bg-1.svg') no-repeat left -1.5rem bottom -1.5rem;
+  background-blend-mode: color-dodge;
 
   &__content {
     display: flex;

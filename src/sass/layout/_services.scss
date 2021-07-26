@@ -1,16 +1,24 @@
 .services {
-  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
-  max-width: 112rem;
-  margin-top: 18.3rem;
-  text-align: center;
+  background: url('/src/img/big-bg.svg') calc(50% - 50rem) 18rem no-repeat, url('/src/img/dot-bg-1.svg') no-repeat bottom 50.2rem left calc(50% + 54.5rem);
 
-  @include media-md {
-    padding-right: 2rem;
-    padding-left: 2rem;
+  &__section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 112rem;
+    margin-top: 18.3rem;
+    text-align: center;
+
+    @include media-md {
+      padding-right: 2rem;
+      padding-left: 2rem;
+    }
   }
 
   &__text {
