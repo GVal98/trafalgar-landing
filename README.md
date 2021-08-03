@@ -21,3 +21,9 @@ Working site: https://gval98.com/trafalgar-landing
 - PostCSS
 - SCSS
 - HTML
+
+### Use:
+
+Install: `npm install`
+Build: `npm run build`
+Dev server: `npm start`
