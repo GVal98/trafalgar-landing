@@ -1,0 +1,12 @@
+.button {
+  @extend %base-button;
+
+  color: $accent-color-1;
+  background-color: transparent;
+  border: 0.2rem solid $accent-color-1;
+  transition: letter-spacing 0.2s;
+
+  &:hover {
+    letter-spacing: 0.1rem;
+  }
+}

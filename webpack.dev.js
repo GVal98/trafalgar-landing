@@ -1,6 +1,6 @@
-const { merge } = require('webpack-merge')
-const baseConfig = require('./webpack.base')
-const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+const { merge } = require('webpack-merge');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const baseConfig = require('./webpack.base');
 
 module.exports = merge(baseConfig, {
   mode: 'development',
@@ -20,6 +20,8 @@ module.exports = merge(baseConfig, {
   devtool: 'source-map',
   devServer: {
     open: true,
+    host: '0.0.0.0',
+    useLocalIp: true,
   },
   target: 'web',
-})
+});

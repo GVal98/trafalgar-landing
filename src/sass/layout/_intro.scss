@@ -1,0 +1,107 @@
+.intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background: url('/src/img/dot-bg-1.svg') no-repeat -4.5rem 8.4rem;
+
+  @include media-md {
+    background-image: none;
+  }
+
+  &__section {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 121.7rem;
+    margin-top: 8.4rem;
+
+    @include media-md {
+      padding-right: 2rem;
+      padding-left: 2rem;
+    }
+
+    @include media-sm {
+      flex-direction: column;
+      margin-top: 4rem;
+      text-align: center;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    max-width: 44.3rem;
+    margin-top: 10.6rem;
+    margin-right: 10.9rem;
+
+    @include media-md {
+      margin-right: 3rem;
+    }
+
+    @include media-sm {
+      align-items: center;
+      margin-top: 0;
+      margin-right: 0;
+    }
+  }
+
+  &__heading {
+    margin: 0;
+    font-size: 4.8rem;
+    font-weight: 700;
+    line-height: 5.6rem;
+    color: $primary-color-1;
+  }
+
+  &__text {
+    margin-top: 2.5rem;
+    font-size: 2.1rem;
+    font-weight: 300;
+    line-height: 3.2rem;
+    color: $primary-color-2;
+  }
+
+  &__button {
+    @extend %base-button;
+
+    margin-top: 4.5rem;
+    color: $primary-color-3;
+    background-color: $accent-color-1;
+
+    &:hover {
+      background-color: #67c3f3;
+    }
+
+    &--desktop {
+      @include media-sm {
+        display: none;
+      }
+    }
+
+    &--mobile {
+      display: none;
+
+      @include media-sm {
+        display: flex;
+        margin-top: 4.5rem;
+      }
+    }
+  }
+
+  &__img {
+    width: 100%;
+    height: auto;
+    margin-right: -2.9rem;
+
+    @include media-md {
+      margin-right: 0;
+    }
+
+    @include media-sm {
+      width: 70%;
+      margin-top: 2.5rem;
+    }
+  }
+}
