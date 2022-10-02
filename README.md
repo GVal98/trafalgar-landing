@@ -1,6 +1,6 @@
 # Trafalgar landing
 
-Working site: https://gval98.com/trafalgar-landing
+Live demo: https://gval98.github.io/trafalgarLanding/
 
 ![Screenshot](https://i.ibb.co/M164WWq/image.png)
 
@@ -11,7 +11,7 @@ Working site: https://gval98.com/trafalgar-landing
 ### Features:
 
 - Responsive design
-- Fast loading due to Webpack, Babel, PostCSS minification
+- Fast loading due to Webpack, Babel, PostCSS minification and the absence of frameworks. Configured from scratch
 
 ### Stack:
 
